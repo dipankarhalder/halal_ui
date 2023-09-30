@@ -1,0 +1,122 @@
+.app_loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  & > .app_loading_center {
+    width: 400px;
+    /* left: 50%;
+    top: 50%; */
+
+    & > .app_loading_inside {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+
+      & > span {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 6px;
+        color: var(--border);
+
+        & > svg {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      & > p {
+        color: var(--heading);
+        font-size: 16px;
+        font-weight: var(--med);
+      }
+    }
+  }
+}
+
+.app_sidebar_cover {
+  width: 200px;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+  background: var(--themegray);
+
+  & > .app_logo {
+    height: 60px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background: var(--themedark);
+  }
+
+  & > .app_navigation {
+    & > .app_nav_cover {
+      margin-bottom: 30px;
+
+      & > h3 {
+        color: var(--heading);
+        font-weight: var(--med);
+        font-size: 12px;
+        padding: 0px 14px;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
+
+      & > ul {
+        display: flex;
+        flex-direction: column;
+
+        & > li {
+          display: flex;
+          width: 100%;
+
+          & > a {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px 14px;
+            border-radius: 4px;
+            transition: 0.5s;
+
+            & > span {
+              width: 22px;
+              height: 22px;
+              margin-right: 14px;
+              color: var(--themedark);
+
+              & > svg {
+                width: 22px;
+                height: 22px;
+              }
+            }
+
+            & > p {
+              font-size: 15px;
+              font-weight: var(--med);
+              color: var(--themedark);
+            }
+
+            &:hover {
+              transition: 0.5s;
+              background: var(--hover);
+
+              & > span {
+                color: var(--themeblue);
+              }
+
+              & > p {
+                color: var(--themeblue);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
