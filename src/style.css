@@ -1,0 +1,43 @@
+:root {
+  --font: 'Nunito', sans-serif;
+  --reg: 400;
+  --med: 500;
+  --semi: 600;
+  --bold: 700;
+
+  --white: #ffffff;
+  --gray: #dbdbdb;
+
+  --border: #e1e2e7;
+  --hover: #ebebee;
+  --heading: #888b97;
+
+  --themegray: #f8f8f9;
+  --themedark: #2a324b;
+  --themeblue: #0052cc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: var(--reg);
+  font-family: var(--font);
+}
+a {
+  text-decoration: none;
+}
+input,
+select,
+textarea,
+button {
+  font-size: 14px;
+  font-weight: var(--reg);
+  font-family: var(--font);
+}
