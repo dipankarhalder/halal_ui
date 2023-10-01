@@ -16,30 +16,60 @@ import {
   HiOutlineClipboardCheck,
 } from 'react-icons/hi';
 
+import {
+  SEARCH,
+  CUSTOMIZATIONS,
+  TEMPLATES,
+  DASHBOARD,
+  TIMETRACKING,
+  TASKLIST,
+  LEADPIPELINE,
+  ESTIMATES,
+  INVOICES,
+  PROJECTS,
+  SCHEDULE,
+  PHOTOANDFILES,
+  CUSTOMERS,
+  MAP,
+  REPORTS,
+} from './routes';
+
 export const navigation = [
   {
     section_name: '',
     list_item: [
-      { icon: HiOutlineSearch, path: '/', title: 'Search' },
-      { icon: HiOutlineAdjustments, path: '/', title: 'Customizations' },
-      { icon: HiOutlineViewGridAdd, path: '/', title: 'Templates' },
+      { icon: HiOutlineSearch, path: SEARCH, title: 'Search' },
+      {
+        icon: HiOutlineAdjustments,
+        path: CUSTOMIZATIONS,
+        title: 'Customizations',
+      },
+      { icon: HiOutlineViewGridAdd, path: TEMPLATES, title: 'Templates' },
     ],
   },
   {
     section_name: 'Main Menu',
     list_item: [
-      { icon: HiOutlineChartPie, path: '/dashboard', title: 'Dashboard' },
-      { icon: HiOutlineClock, path: '/settings', title: 'Time Tracking' },
-      { icon: HiOutlineNewspaper, path: '/', title: 'Task List' },
-      { icon: HiOutlineInboxIn, path: '/', title: 'Lead Pipeline' },
-      { icon: HiOutlineCheckCircle, path: '/', title: 'Estimates' },
-      { icon: HiOutlineReceiptTax, path: '/', title: 'Invoices' },
-      { icon: HiOutlineFolder, path: '/', title: 'Projects' },
-      { icon: HiOutlineSupport, path: '/', title: 'Schedule' },
-      { icon: HiOutlinePhotograph, path: '/', title: 'Photos & Files' },
-      { icon: HiOutlineUserGroup, path: '/', title: 'Customers' },
-      { icon: HiOutlineLocationMarker, path: '/', title: 'Map' },
-      { icon: HiOutlineClipboardCheck, path: '/', title: 'Reports' },
+      { icon: HiOutlineChartPie, path: DASHBOARD, title: 'Dashboard' },
+      { icon: HiOutlineClock, path: TIMETRACKING, title: 'Time Tracking' },
+      { icon: HiOutlineNewspaper, path: TASKLIST, title: 'Task List' },
+      {
+        icon: HiOutlineInboxIn,
+        path: LEADPIPELINE,
+        title: 'Lead Pipeline',
+      },
+      { icon: HiOutlineCheckCircle, path: ESTIMATES, title: 'Estimates' },
+      { icon: HiOutlineReceiptTax, path: INVOICES, title: 'Invoices' },
+      { icon: HiOutlineFolder, path: PROJECTS, title: 'Projects' },
+      { icon: HiOutlineSupport, path: SCHEDULE, title: 'Schedule' },
+      {
+        icon: HiOutlinePhotograph,
+        path: PHOTOANDFILES,
+        title: 'Photos & Files',
+      },
+      { icon: HiOutlineUserGroup, path: CUSTOMERS, title: 'Customers' },
+      { icon: HiOutlineLocationMarker, path: MAP, title: 'Map' },
+      { icon: HiOutlineClipboardCheck, path: REPORTS, title: 'Reports' },
     ],
   },
 ];
