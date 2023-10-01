@@ -1,13 +1,12 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import { Routes, Route } from 'react-router-dom';
 
-import { LOGIN, DASHBOARD, SETTINGS } from './config/routes';
+import { LOGIN, DASHBOARD } from './config/routes';
 import { ProtectedRoute } from './config/protected';
 import { Loading } from './components/loading';
 
 import { Login } from './pages/login';
 import { Dashboard } from './pages/dashboard';
-import { Settings } from './pages/settings';
 
 export const Application = () => {
   const { isLoading } = useAuth0();
@@ -26,9 +25,9 @@ export const Application = () => {
         <Route path={DASHBOARD} element={<Dashboard />} />
       </Route>
 
-      <Route element={<ProtectedRoute />}>
+      {/* <Route element={<ProtectedRoute />}>
         <Route path={SETTINGS} element={<Settings />} />
-      </Route>
+      </Route> */}
 
       {/* Not found */}
       <Route path="*" element={<div>Not found</div>} />
