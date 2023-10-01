@@ -1,6 +1,8 @@
 import './style.css';
-import { useAuth0 } from '@auth0/auth0-react';
+
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
+
 import { navigation } from '../config/content';
 
 export const Sidebar = () => {
