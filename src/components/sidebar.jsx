@@ -1,8 +1,11 @@
 import './style.css';
+import { useAuth0 } from '@auth0/auth0-react';
 import { Link } from 'react-router-dom';
 import { navigation } from '../config/content';
 
 export const Sidebar = () => {
+  const { logout } = useAuth0();
+
   return (
     <div className="app_sidebar_cover">
       <span className="app_logo"></span>
@@ -25,6 +28,13 @@ export const Sidebar = () => {
           </div>
         ))}
       </div>
+      <span
+        onClick={() =>
+          logout({ logoutParams: { returnTo: window.location.origin } })
+        }
+      >
+        Logout
+      </span>
     </div>
   );
 };
