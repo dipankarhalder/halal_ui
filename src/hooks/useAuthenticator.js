@@ -12,5 +12,5 @@ export const useAuthenticator = (authlink, notAuthLink) => {
     } else {
       navigate(notAuthLink);
     }
-  }, [isAuthenticated]);
+  }, [authlink, notAuthLink, isAuthenticated, navigate]);
 };

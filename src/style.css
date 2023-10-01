@@ -41,3 +41,8 @@ button {
   font-weight: var(--reg);
   font-family: var(--font);
 }
+
+.app_wrapper_cover {
+  display: flex;
+  flex-wrap: wrap;
+}
