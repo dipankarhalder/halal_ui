@@ -28,8 +28,8 @@ export const navigation = [
   {
     section_name: 'Main Menu',
     list_item: [
-      { icon: HiOutlineChartPie, path: '/', title: 'Dashboard' },
-      { icon: HiOutlineClock, path: '/', title: 'Time Tracking' },
+      { icon: HiOutlineChartPie, path: '/dashboard', title: 'Dashboard' },
+      { icon: HiOutlineClock, path: '/settings', title: 'Time Tracking' },
       { icon: HiOutlineNewspaper, path: '/', title: 'Task List' },
       { icon: HiOutlineInboxIn, path: '/', title: 'Lead Pipeline' },
       { icon: HiOutlineCheckCircle, path: '/', title: 'Estimates' },
